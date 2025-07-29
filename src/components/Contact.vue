@@ -3,10 +3,11 @@
     <div class="container">
       <h2 class="section-title">Get In Touch</h2>
       <p class="contact-intro">
-        Ready to begin your healing journey? We're here to support you every step of the way. 
-        Reach out to schedule a consultation or ask any questions you may have.
+        Ready to begin your healing journey? We're here to support you every
+        step of the way. Reach out to schedule a consultation or ask any
+        questions you may have.
       </p>
-      
+
       <div class="contact-content">
         <div class="contact-info">
           <div class="info-item">
@@ -17,7 +18,7 @@
               <span>Available Mon-Fri, 9AM-6PM</span>
             </div>
           </div>
-          
+
           <div class="info-item">
             <div class="info-icon">✉️</div>
             <div class="info-details">
@@ -26,124 +27,157 @@
               <span>We respond within 24 hours</span>
             </div>
           </div>
-          
+
           <div class="info-item">
             <div class="info-icon">📍</div>
             <div class="info-details">
               <h3>Location</h3>
-              <p>Professional Office Building<br>
-                 123 Wellness Way, Suite 200<br>
-                 Your City, ST 12345</p>
+              <p>
+                Professional Office Building<br />
+                123 Wellness Way, Suite 200<br />
+                Your City, ST 12345
+              </p>
               <span>Easy parking available</span>
             </div>
           </div>
-          
+
           <div class="info-item">
             <div class="info-icon">🕒</div>
             <div class="info-details">
               <h3>Office Hours</h3>
-              <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
-                 Saturday: 10:00 AM - 3:00 PM<br>
-                 Sunday: Closed</p>
+              <p>
+                Monday - Friday: 9:00 AM - 6:00 PM<br />
+                Saturday: 10:00 AM - 3:00 PM<br />
+                Sunday: Closed
+              </p>
               <span>Emergency support available</span>
             </div>
           </div>
         </div>
-        
+
         <div class="contact-form-container">
           <form @submit.prevent="submitForm" class="contact-form">
             <h3>Send us a message</h3>
-            
+
             <div class="form-group">
               <label for="name">Full Name *</label>
-              <input 
-                type="text" 
-                id="name" 
-                v-model="form.name" 
+              <input
+                type="text"
+                id="name"
+                v-model="form.name"
                 required
                 placeholder="Enter your full name"
-              >
+              />
             </div>
-            
+
             <div class="form-row">
               <div class="form-group">
                 <label for="email">Email Address *</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  v-model="form.email" 
+                <input
+                  type="email"
+                  id="email"
+                  v-model="form.email"
                   required
                   placeholder="your@email.com"
-                >
+                />
               </div>
-              
+
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input 
-                  type="tel" 
-                  id="phone" 
+                <input
+                  type="tel"
+                  id="phone"
                   v-model="form.phone"
                   placeholder="(555) 123-4567"
-                >
+                />
               </div>
             </div>
-            
+
             <div class="form-group">
               <label for="service">Service of Interest</label>
               <select id="service" v-model="form.service">
                 <option value="">Select a service</option>
-                <option value="individual-therapy">Individual Trauma Therapy</option>
-                <option value="art-therapy">Accelerated Resolution Therapy</option>
-                <option value="wellness-presentation">Mental Wellness Presentation</option>
-                <option value="anxiety-depression">Anxiety & Depression Support</option>
+                <option value="individual-therapy">
+                  Individual Trauma Therapy
+                </option>
+                <option value="art-therapy">
+                  Accelerated Resolution Therapy
+                </option>
+                <option value="wellness-presentation">
+                  Mental Wellness Presentation
+                </option>
+                <option value="anxiety-depression">
+                  Anxiety & Depression Support
+                </option>
                 <option value="consultation">Initial Consultation</option>
               </select>
             </div>
-            
+
             <div class="form-group">
               <label for="preferred-contact">Preferred Contact Method</label>
               <div class="radio-group">
                 <label class="radio-label">
-                  <input type="radio" value="email" v-model="form.preferredContact">
+                  <input
+                    type="radio"
+                    value="email"
+                    v-model="form.preferredContact"
+                  />
                   Email
                 </label>
                 <label class="radio-label">
-                  <input type="radio" value="phone" v-model="form.preferredContact">
+                  <input
+                    type="radio"
+                    value="phone"
+                    v-model="form.preferredContact"
+                  />
                   Phone
                 </label>
                 <label class="radio-label">
-                  <input type="radio" value="either" v-model="form.preferredContact">
+                  <input
+                    type="radio"
+                    value="either"
+                    v-model="form.preferredContact"
+                  />
                   Either
                 </label>
               </div>
             </div>
-            
+
             <div class="form-group">
               <label for="message">Message *</label>
-              <textarea 
-                id="message" 
-                v-model="form.message" 
+              <textarea
+                id="message"
+                v-model="form.message"
                 required
                 rows="5"
                 placeholder="Tell us how we can help you or any questions you have..."
               ></textarea>
             </div>
-            
+
             <div class="form-group">
               <label class="checkbox-label">
-                <input type="checkbox" v-model="form.consent" required>
-                I consent to being contacted about my inquiry and understand that my information will be kept confidential in accordance with privacy policies.
+                <input type="checkbox" v-model="form.consent" required />
+                I consent to being contacted about my inquiry and understand
+                that my information will be kept confidential in accordance with
+                privacy policies.
               </label>
             </div>
-            
-            <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
-              {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              :disabled="isSubmitting"
+            >
+              {{ isSubmitting ? "Sending..." : "Send Message" }}
             </button>
           </form>
-          
+
           <div class="booking-cta">
             <h4>Ready to Book?</h4>
-            <p>Schedule your appointment directly through our secure booking system.</p>
+            <p>
+              Schedule your appointment directly through our secure booking
+              system.
+            </p>
             <a href="#" class="btn btn-secondary">Book Online</a>
           </div>
         </div>
@@ -153,41 +187,43 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive } from "vue";
 
-const isSubmitting = ref(false)
+const isSubmitting = ref(false);
 
 const form = reactive({
-  name: '',
-  email: '',
-  phone: '',
-  service: '',
-  preferredContact: 'email',
-  message: '',
-  consent: false
-})
+  name: "",
+  email: "",
+  phone: "",
+  service: "",
+  preferredContact: "email",
+  message: "",
+  consent: false,
+});
 
 const submitForm = async () => {
-  isSubmitting.value = true
-  
+  isSubmitting.value = true;
+
   // Simulate form submission
   setTimeout(() => {
-    alert('Thank you for your message! We will get back to you within 24 hours.')
-    
+    alert(
+      "Thank you for your message! We will get back to you within 24 hours."
+    );
+
     // Reset form
     Object.assign(form, {
-      name: '',
-      email: '',
-      phone: '',
-      service: '',
-      preferredContact: 'email',
-      message: '',
-      consent: false
-    })
-    
-    isSubmitting.value = false
-  }, 1000)
-}
+      name: "",
+      email: "",
+      phone: "",
+      service: "",
+      preferredContact: "email",
+      message: "",
+      consent: false,
+    });
+
+    isSubmitting.value = false;
+  }, 1000);
+};
 </script>
 
 <style scoped>
@@ -234,7 +270,7 @@ const submitForm = async () => {
 }
 
 .info-details h3 {
-  color: #6a4c93;
+  color: #4d5d44;
   margin-bottom: 0.5rem;
 }
 
@@ -264,7 +300,7 @@ const submitForm = async () => {
 }
 
 .contact-form h3 {
-  color: #6a4c93;
+  color: #4d5d44;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -301,7 +337,7 @@ const submitForm = async () => {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #6a4c93;
+  border-color: #4d5d44;
 }
 
 .radio-group {
@@ -335,7 +371,7 @@ const submitForm = async () => {
 }
 
 .booking-cta {
-  background: linear-gradient(135deg, #6a4c93, #553a7a);
+  background: linear-gradient(135deg, #4d5d44, #3a4633);
   color: white;
   padding: 2rem;
   border-radius: 15px;

@@ -8,38 +8,62 @@
             <p class="footer-tagline">Compassionate Counselling Services</p>
           </div>
           <p class="footer-description">
-            Providing trauma-informed and compassionate counselling services 
-            in a safe, supportive environment where healing begins.
+            Providing trauma-informed and compassionate counselling services in
+            a safe, supportive environment where healing begins.
           </p>
           <div class="footer-quote">
             <p>"We are all just walking each other home." - Ram Dass</p>
           </div>
         </div>
-        
+
         <div class="footer-section">
           <h4>Quick Links</h4>
           <ul class="footer-links">
             <li><a href="#home" @click="scrollTo('home')">Home</a></li>
             <li><a href="#about" @click="scrollTo('about')">About</a></li>
-            <li><a href="#services" @click="scrollTo('services')">Services</a></li>
+            <li>
+              <a href="#services" @click="scrollTo('services')">Services</a>
+            </li>
             <li><a href="#contact" @click="scrollTo('contact')">Contact</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Service</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-section">
           <h4>Services</h4>
           <ul class="footer-links">
-            <li><a href="#services" @click="scrollTo('services')">Individual Therapy</a></li>
-            <li><a href="#services" @click="scrollTo('services')">Trauma Therapy</a></li>
-            <li><a href="#services" @click="scrollTo('services')">ART Therapy</a></li>
-            <li><a href="#services" @click="scrollTo('services')">Wellness Presentations</a></li>
-            <li><a href="#services" @click="scrollTo('services')">Anxiety Support</a></li>
-            <li><a href="#services" @click="scrollTo('services')">Depression Support</a></li>
+            <li>
+              <a href="#services" @click="scrollTo('services')"
+                >Individual Therapy</a
+              >
+            </li>
+            <li>
+              <a href="#services" @click="scrollTo('services')"
+                >Trauma Therapy</a
+              >
+            </li>
+            <li>
+              <a href="#services" @click="scrollTo('services')">ART Therapy</a>
+            </li>
+            <li>
+              <a href="#services" @click="scrollTo('services')"
+                >Wellness Presentations</a
+              >
+            </li>
+            <li>
+              <a href="#services" @click="scrollTo('services')"
+                >Anxiety Support</a
+              >
+            </li>
+            <li>
+              <a href="#services" @click="scrollTo('services')"
+                >Depression Support</a
+              >
+            </li>
           </ul>
         </div>
-        
+
         <div class="footer-section">
           <h4>Contact Info</h4>
           <div class="contact-details">
@@ -65,23 +89,26 @@
               </div>
             </div>
           </div>
-          
+
           <div class="booking-reminder">
             <a href="#" class="btn btn-primary">Book Appointment</a>
           </div>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
         <div class="footer-bottom-content">
           <p>&copy; {{ currentYear }} AFLC Services. All rights reserved.</p>
           <div class="professional-notice">
-            <p>Licensed Professional Counselling Services | Confidential & HIPAA Compliant</p>
+            <p>Licensed Professional Counselling Services</p>
           </div>
           <div class="emergency-notice">
-            <p><strong>Crisis Support:</strong> If you're experiencing a mental health emergency, 
-               please call 911 or visit your nearest emergency room. For crisis support, 
-               call the National Suicide Prevention Lifeline at 988.</p>
+            <p>
+              <strong>Crisis Support:</strong> If you're experiencing a mental
+              health emergency, please call 911 or visit your nearest emergency
+              room. For crisis support, call the National Suicide Prevention
+              Lifeline at 988.
+            </p>
           </div>
         </div>
       </div>
@@ -90,21 +117,21 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed } from "vue";
 
-const currentYear = computed(() => new Date().getFullYear())
+const currentYear = computed(() => new Date().getFullYear());
 
 const scrollTo = (elementId) => {
-  const element = document.getElementById(elementId)
+  const element = document.getElementById(elementId);
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
+    element.scrollIntoView({ behavior: "smooth" });
   }
-}
+};
 </script>
 
 <style scoped>
 .footer {
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  background: linear-gradient(135deg, #4d5d44 0%, #3a4633 100%);
   color: white;
 }
 
@@ -116,7 +143,7 @@ const scrollTo = (elementId) => {
 }
 
 .footer-section h3 {
-  color: #ffd700;
+  color: #e8e4a6;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
@@ -137,21 +164,21 @@ const scrollTo = (elementId) => {
   background: rgba(255, 255, 255, 0.1);
   padding: 1rem;
   border-radius: 10px;
-  border-left: 3px solid #ffd700;
+  border-left: 3px solid #e8e4a6;
 }
 
 .footer-quote p {
   font-style: italic;
-  color: #ffd700;
+  color: #e8e4a6;
   text-align: center;
 }
 
 .footer-section h4 {
-  color: #ffd700;
+  color: #e8e4a6;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #ffd700;
+  border-bottom: 2px solid #e8e4a6;
 }
 
 .footer-links {
@@ -170,7 +197,7 @@ const scrollTo = (elementId) => {
 }
 
 .footer-links a:hover {
-  color: #ffd700;
+  color: #e8e4a6;
 }
 
 .contact-details {

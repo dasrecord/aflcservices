@@ -3,22 +3,30 @@
     <div class="hero-content">
       <div class="hero-text">
         <h1 class="hero-title">
-          Find Your Path to<br>
+          Find Your Path to<br />
           <span class="highlight">Healing & Wellness</span>
         </h1>
         <p class="hero-subtitle">
-          Providing trauma-informed and compassionate counselling services 
-          in a safe, supportive environment where you can begin your journey 
-          toward healing and inner peace.
+          Providing trauma-informed and compassionate counselling services in a
+          safe, supportive environment where you can begin your journey toward
+          healing and inner peace.
         </p>
         <div class="hero-quote">
           <p>"We are all just walking each other home." - Ram Dass</p>
         </div>
         <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary" @click="scrollTo('contact')">
+          <a
+            href="#contact"
+            class="btn btn-primary"
+            @click="scrollTo('contact')"
+          >
             Book a Session
           </a>
-          <a href="#services" class="btn btn-secondary" @click="scrollTo('services')">
+          <a
+            href="#services"
+            class="btn btn-secondary"
+            @click="scrollTo('services')"
+          >
             Learn More
           </a>
         </div>
@@ -32,7 +40,10 @@
     </div>
     <div class="hero-wave">
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,0V60c100,40 200,40 300,20S500,40 600,60s200,20 300,20S1100,60 1200,40V0Z" fill="#f8f9fa"></path>
+        <path
+          d="M0,0V60c100,40 200,40 300,20S500,40 600,60s200,20 300,20S1100,60 1200,40V0Z"
+          fill="#f8f9fa"
+        ></path>
       </svg>
     </div>
   </section>
@@ -40,17 +51,17 @@
 
 <script setup>
 const scrollTo = (elementId) => {
-  const element = document.getElementById(elementId)
+  const element = document.getElementById(elementId);
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
+    element.scrollIntoView({ behavior: "smooth" });
   }
-}
+};
 </script>
 
 <style scoped>
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #cec390 0%, #4d5d44 100%);
   display: flex;
   align-items: center;
   position: relative;
@@ -60,7 +71,7 @@ const scrollTo = (elementId) => {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -90,7 +101,7 @@ const scrollTo = (elementId) => {
 }
 
 .highlight {
-  color: #ffd700;
+  color: #4d5d44;
   position: relative;
 }
 
@@ -106,7 +117,7 @@ const scrollTo = (elementId) => {
   padding: 1.5rem;
   border-radius: 15px;
   margin: 2rem 0;
-  border-left: 4px solid #ffd700;
+  border-left: 4px solid #cec390;
 }
 
 .hero-quote p {

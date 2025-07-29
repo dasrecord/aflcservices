@@ -60,7 +60,7 @@ const scrollTo = (elementId) => {
 }
 
 .logo h2 {
-  color: #6a4c93;
+  color: #4d5d44;
   font-size: 1.8rem;
   margin-bottom: 0.2rem;
 }
@@ -86,7 +86,7 @@ const scrollTo = (elementId) => {
 }
 
 .nav-menu a:not(.btn):hover {
-  color: #6a4c93;
+  color: #4d5d44;
 }
 
 .nav-menu a:not(.btn)::after {
@@ -96,7 +96,7 @@ const scrollTo = (elementId) => {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background: #6a4c93;
+  background: #4d5d44;
   transition: width 0.3s ease;
 }
 

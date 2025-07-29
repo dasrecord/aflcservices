@@ -7,18 +7,20 @@
           <div class="intro">
             <h3>Compassionate Counselling & Support</h3>
             <p>
-              At AFLC Services, we provide trauma-informed and anti-oppressive counselling 
-              services aimed at offering nervous-system and trauma education along with tools 
-              for wellness and recovery from life's trials and obstacles.
+              At AFLC Services, we provide trauma-informed and anti-oppressive
+              counselling services aimed at offering nervous-system and trauma
+              education along with tools for wellness and recovery from life's
+              trials and obstacles.
             </p>
           </div>
-          
+
           <div class="mission">
             <h4>Our Mission</h4>
             <p>
-              Our focus remains on creating a safe and supportive environment for individuals 
-              to navigate their healing journey and to return to safety and security within themselves. 
-              We believe in the power of compassionate care and evidence-based therapeutic approaches.
+              Our focus remains on creating a safe and supportive environment
+              for individuals to navigate their healing journey and to return to
+              safety and security within themselves. We believe in the power of
+              compassionate care and evidence-based therapeutic approaches.
             </p>
           </div>
 
@@ -36,24 +38,28 @@
           <div class="credentials">
             <h4>Professional Qualifications</h4>
             <p>
-              Our licensed therapists bring years of experience in trauma therapy, 
-              mental health counselling, and specialized therapeutic techniques. 
-              We are committed to ongoing education and professional development 
-              to provide the highest quality care.
+              Our licensed therapists bring years of experience in trauma
+              therapy, mental health counselling, and specialized therapeutic
+              techniques. We are committed to ongoing education and professional
+              development to provide the highest quality care.
             </p>
           </div>
         </div>
-        
+
         <div class="about-image">
           <div class="therapist-card">
             <div class="therapist-photo">
               <div class="photo-placeholder">
-                <span class="icon">👩‍⚕️</span>
+
+                <span class="icon">👨‍⚕️</span>
               </div>
             </div>
             <div class="therapist-info">
               <h4>Licensed Professional Counsellor</h4>
-              <p>Specializing in trauma therapy, anxiety, depression, and wellness coaching</p>
+              <p>
+                Specializing in trauma therapy, anxiety, depression, and
+                wellness coaching
+              </p>
               <div class="certifications">
                 <span class="cert">Licensed Therapist</span>
                 <span class="cert">Trauma Specialist</span>
@@ -86,7 +92,7 @@
 }
 
 .intro h3 {
-  color: #6a4c93;
+  color: #4d5d44;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
@@ -104,7 +110,7 @@
   font-size: 1.3rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #6a4c93;
+  border-bottom: 2px solid #4d5d44;
   display: inline-block;
 }
 
@@ -136,7 +142,7 @@
 .photo-placeholder {
   width: 150px;
   height: 150px;
-  background: linear-gradient(135deg, #6a4c93, #553a7a);
+  background: linear-gradient(135deg, #4d5d44, #3a4633);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -149,7 +155,7 @@
 }
 
 .therapist-info h4 {
-  color: #6a4c93;
+  color: #4d5d44;
   margin-bottom: 1rem;
 }
 
@@ -166,7 +172,7 @@
 }
 
 .cert {
-  background: #6a4c93;
+  background: #4d5d44;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;

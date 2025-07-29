@@ -30,23 +30,27 @@ A professional, accessible Vue.js website for AFLC Services, providing compassio
 ## 📋 Getting Started
 
 ### Prerequisites
+
 - Node.js (version 16 or higher)
 - npm or yarn package manager
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd aflcservices
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -78,6 +82,7 @@ src/
 ## 🎨 Design Guidelines
 
 ### Color Palette
+
 - **Primary**: #6a4c93 (Deep Purple)
 - **Secondary**: #553a7a (Darker Purple)
 - **Accent**: #ffd700 (Gold)
@@ -85,6 +90,7 @@ src/
 - **Background**: #f8f9fa (Light Gray)
 
 ### Typography
+
 - **Font Family**: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 - **Heading Scale**: 2.5rem, 1.8rem, 1.5rem, 1.3rem
 - **Line Height**: 1.6 for body text, 1.2 for headings
@@ -111,6 +117,7 @@ To customize the website for your counselling practice:
 To deploy the website:
 
 1. Build the project:
+
 ```bash
 npm run build
 ```

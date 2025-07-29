@@ -1,10 +1,10 @@
 <script setup>
-import Navigation from './components/Navigation.vue'
-import Hero from './components/Hero.vue'
-import About from './components/About.vue'
-import Services from './components/Services.vue'
-import Contact from './components/Contact.vue'
-import Footer from './components/Footer.vue'
+import Navigation from "./components/Navigation.vue";
+import Hero from "./components/Hero.vue";
+import About from "./components/About.vue";
+import Services from "./components/Services.vue";
+import Contact from "./components/Contact.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -26,7 +26,7 @@ import Footer from './components/Footer.vue'
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 1.6;
   color: #333;
 }
@@ -56,7 +56,7 @@ body {
 .btn {
   display: inline-block;
   padding: 12px 30px;
-  background: #6a4c93;
+  background: #4d5d44;
   color: white;
   text-decoration: none;
   border-radius: 30px;
@@ -67,18 +67,18 @@ body {
 }
 
 .btn:hover {
-  background: #553a7a;
+  background: #3a4633;
   transform: translateY(-2px);
 }
 
 .btn-secondary {
-  background: transparent;
-  color: #6a4c93;
-  border: 2px solid #6a4c93;
+  background: white;
+  color: #4d5d44;
+  border: 2px solid #4d5d44;
 }
 
 .btn-secondary:hover {
-  background: #6a4c93;
+  background: #4d5d44;
   color: white;
 }
 </style>

@@ -118,7 +118,7 @@ const scrollTo = (elementId) => {
 
 <style scoped>
 .services {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: #f8f9fa;
 }
 
 .services-intro {
@@ -154,7 +154,7 @@ const scrollTo = (elementId) => {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #6a4c93, #553a7a);
+  background: linear-gradient(90deg, #4d5d44, #3a4633);
 }
 
 .service-card:hover {
@@ -168,7 +168,7 @@ const scrollTo = (elementId) => {
 }
 
 .service-number {
-  color: #6a4c93;
+  color: #4d5d44;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -202,7 +202,7 @@ const scrollTo = (elementId) => {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #6a4c93;
+  color: #4d5d44;
   font-weight: bold;
 }
 
@@ -227,15 +227,15 @@ const scrollTo = (elementId) => {
 }
 
 .info-card {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
+  background: white;
   border-radius: 15px;
   padding: 2rem;
   text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .info-card h3 {
-  color: #6a4c93;
+  color: #4d5d44;
   margin-bottom: 1rem;
 }
 
